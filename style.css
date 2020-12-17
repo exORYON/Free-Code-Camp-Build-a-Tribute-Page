@@ -128,6 +128,11 @@ body {
 @media (max-width: 1270px) {
   #tribute-info {
     flex-direction: column;
+    margin: 100px 0;
+  }
+  
+  #tribute-info p {
+    margin: 10px 0;
   }
   
   #img-title-text {
@@ -149,10 +154,86 @@ body {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 670px) {
   #img-caption h3 {
     font-size: 1.5em;
   }
   
+  #img-text {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+  
+  #img-title-text {
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  
+  #img-description-text {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  
+  #tribute-info p {
+    max-width: 450px;
+    font-size: 1em;
+  }
+}
 
+@media (max-width: 480px) {
+  #image {
+    position: relative;
+  }
+  
+  #img-text {
+    bottom: auto;
+    height: 270px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  
+  #title {
+    font-size: 1.4em;
+  }
+  
+  #header-container h2 span {
+    margin: 5px;
+  }
+  
+  #header-container h2 {
+    font-size: 15px;
+    letter-spacing: 1.2px;
+  }
+  
+  #tribute-info p {
+    max-width: 350px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 370px) {
+  #img-text {
+    margin-bottom: 5px;
+  }
+  
+  #tribute-info p {
+    max-width: 300px;
+    padding: 20px 10px;
+    font-size: 0.75em;
+  }
+  
+  #img-caption {
+    margin-bottom: -90px;
+  }
+  
+  #tribute-info > p:nth-child(2) {
+    margin-bottom: -80px;
+  }
+  
+  #img-description-text {
+    font-size: 0.7em;
+  }
 }
